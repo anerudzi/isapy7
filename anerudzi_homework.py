@@ -40,11 +40,13 @@ elif wybrany_program == 5:
     print("Wybrano 5 Program ktory rysuje prostokat o zadanych rozmiarach")
     a=int(input("Podaj wymiar a= "))
     b=int(input("Podaj wymiar b= "))
-    print("+", "-"* (a-2), "+")
-    while b>0:
-        print("|", " " * (a-2), "|")
-        b -=1
-    print("+", "-" * (a - 2), "+")
+    print("+","-"*(a-2),"+")
+    print(("|"+" "*(a)+"|"+"\n")*(b-1)+"|"+" "*(a)+"|")
+    #while b>0:
+        #print("|", " " * (a-2), "|")
+        #b -=1
+    print("+","-"*(a-2),"+")
+    input()
 
 elif wybrany_program == 6:
     print("Wybrano 6 Program do przeliczania liczby zapisanej w formacie binarnym na system dziesiatny")
