@@ -8,7 +8,24 @@ print("6 Program KALKULATOR")
 wybrany_program = int(input("   Wybieram program = "))
 
 if wybrany_program == 1:
-    print("Work in progress")
+    lista = []
+    dlugosc_listy = int(input("Podaj ilosc elementow listy: "))
+    i = 1
+    while i <= dlugosc_listy:
+        lista.append(input("Element: "))
+        i += 1
+
+    print(lista, "\n\n")
+
+    print(("+" + "-" * 30) * len(lista) + "+")
+
+    for element in lista:
+        if len(element) >= 30:
+            print("| " + element[0:25] + "...", end=" ")
+        else:
+            print("| " + element + " " * (29 - len(element)), end="")
+
+    print("|" + "\n" + ("+" + "-" * 30) * len(lista), end="+")
     input()
 
 if wybrany_program == 2:
